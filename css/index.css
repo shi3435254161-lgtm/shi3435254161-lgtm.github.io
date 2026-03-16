@@ -14655,10 +14655,10 @@ div#banners .bannerText {
   z-index: 1000;
 }
 [data-theme=dark] {
-  --efu-theme: rgba(139,0,0,0.3);
-  --efu-theme-op: rgba(139,0,0,0.3) 23;
-  --efu-theme-op-deep: rgba(139,0,0,0.3) dd;
-  --efu-theme-none: rgba(139,0,0,0.3) 0;
+  --efu-theme: #ffc848;
+  --efu-theme-op: rgba(255,200,72,0.137);
+  --efu-theme-op-deep: rgba(255,200,72,0.867);
+  --efu-theme-none: rgba(255,200,72,0);
   --efu-blue: #0084ff;
   --efu-red: #ff3842;
   --efu-pink: #d44040;
