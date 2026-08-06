@@ -6,6 +6,7 @@ class LocalSearch {
         this.resultsPerPage = 10;
         this.currentResults = [];
         this.isLoading = false;
+        this.isLoaded = false;
         this.searchTimeout = null;
         
         // DOM 元素缓存
@@ -37,9 +38,11 @@ class LocalSearch {
      */
     async init() {
         try {
-            await this.loadSearchData();
             this.bindEvents();
             this.bindKeyboardShortcuts();
+            if (GLOBAL_CONFIG?.localsearch?.preload) {
+                await this.loadSearchData();
+            }
         } catch (error) {
             console.error('Search initialization failed:', error);
         }
@@ -49,6 +52,8 @@ class LocalSearch {
      * 加载搜索数据
      */
     async loadSearchData() {
+        if (this.isLoaded || this.isLoading) return;
+
         if (!GLOBAL_CONFIG?.localsearch?.path) {
             throw new Error('Search data path not configured');
         }
@@ -62,6 +67,7 @@ class LocalSearch {
             
             const data = await response.text();
             this.parseSearchData(data);
+            this.isLoaded = true;
         } catch (error) {
             throw new Error(`Failed to load search data: ${error.message}`);
         } finally {
@@ -100,21 +106,21 @@ class LocalSearch {
      */
     bindEvents() {
         // 搜索输入事件
-        this.elements.searchInput?.addEventListener('input', this.debounce((e) => {
+        this.bindElement(this.elements.searchInput, 'localSearchInput', 'input', this.debounce((e) => {
             this.handleSearchInput(e.target.value.trim());
         }, 300));
 
         // 打开/关闭搜索
-        this.elements.searchButton?.addEventListener('click', () => this.openSearch());
-        this.elements.closeButton?.addEventListener('click', () => this.closeSearch());
-        this.elements.searchMask?.addEventListener('click', () => this.closeSearch());
+        this.bindElement(this.elements.searchButton, 'localSearchOpen', 'click', () => this.openSearch());
+        this.bindElement(this.elements.closeButton, 'localSearchClose', 'click', () => this.closeSearch());
+        this.bindElement(this.elements.searchMask, 'localSearchMaskClose', 'click', () => this.closeSearch());
 
         // 标签列表点击事件
         this.bindTagListEvents();
 
         // 右键菜单搜索
         if (GLOBAL_CONFIG.right_menu && this.elements.menuSearch) {
-            this.elements.menuSearch.addEventListener('click', () => {
+            this.bindElement(this.elements.menuSearch, 'localSearchMenu', 'click', () => {
                 rm.hideRightMenu();
                 this.openSearch();
                 if (window.selectTextNow) {
@@ -125,10 +131,19 @@ class LocalSearch {
         }
 
         // PJAX 兼容性
-        window.addEventListener('pjax:complete', () => {
+        if (!this.pjaxBound) {
+            window.addEventListener('pjax:complete', () => {
             this.elements = this.cacheElements();
-            this.bindEvents();
-        });
+                this.bindEvents();
+            });
+            this.pjaxBound = true;
+        }
+    }
+
+    bindElement(element, key, event, handler) {
+        if (!element || element.dataset[key]) return;
+        element.addEventListener(event, handler);
+        element.dataset[key] = 'true';
     }
 
     /**
@@ -137,7 +152,7 @@ class LocalSearch {
     bindTagListEvents() {
         const tagLists = document.querySelectorAll("#local-search .tag-list");
         tagLists.forEach(el => {
-            el.addEventListener("click", () => this.closeSearch());
+            this.bindElement(el, 'localSearchTag', 'click', () => this.closeSearch());
         });
     }
 
@@ -145,6 +160,7 @@ class LocalSearch {
      * 绑定键盘快捷键
      */
     bindKeyboardShortcuts() {
+        if (this.keyboardBound) return;
         document.addEventListener("keydown", (event) => {
             // Ctrl+K 打开搜索
             if (event.ctrlKey && event.key === "k") {
@@ -158,16 +174,23 @@ class LocalSearch {
                 this.closeSearch();
             }
         });
+        this.keyboardBound = true;
     }
 
     /**
      * 打开搜索框
      */
-    openSearch() {
+    async openSearch() {
         if (!this.elements.searchMask || !this.elements.searchDialog) return;
 
         utils.animateIn(this.elements.searchMask, "to_show 0.5s");
         this.elements.searchDialog.style.display = "flex";
+        if (!this.isLoaded) {
+            await this.loadSearchData().catch((error) => {
+                console.error('Search data load failed:', error);
+                this.showErrorMessage('Search index failed to load, please try again later');
+            });
+        }
         
         // 延迟聚焦以确保动画完成
         setTimeout(() => {

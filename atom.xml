@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>9n6h12</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://reverser9n6h12.me/</id>
+  <link href="https://reverser9n6h12.me/" rel="alternate"/>
+  <link href="https://reverser9n6h12.me/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, 9n6h12</rights>
+  <subtitle>CTF Reverse、安卓逆向、调试、混淆分析与安全学习笔记</subtitle>
+  <title>OVERTHINKER</title>
+  <updated>2026-08-06T09:20:36.970Z</updated>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <category term="文章" scheme="https://reverser9n6h12.me/tags/%E6%96%87%E7%AB%A0/"/>
+    <id>https://reverser9n6h12.me/2026/08/06/%E9%80%86%E5%90%91%E5%AD%A6%E4%B9%A0%E5%8F%8D%E6%80%9D/</id>
+    <link href="https://reverser9n6h12.me/2026/08/06/%E9%80%86%E5%90%91%E5%AD%A6%E4%B9%A0%E5%8F%8D%E6%80%9D/"/>
+    <published>2026-08-06T06:40:06.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="经历："><a href="#经历：" class="headerlink" title="经历："></a>经历：</h1><h2 id="初衷："><a href="#初衷：" class="headerlink" title="初衷："></a>初衷：</h2><p>不知不觉,浑浑噩噩地在大学里待了一年，收获反正是很多的，尤其是加入了学]]>
+    </summary>
+    <title>逆向学习反思</title>
+    <updated>2026-08-06T09:20:36.970Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <id>https://reverser9n6h12.me/2026/08/06/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/</id>
+    <link href="https://reverser9n6h12.me/2026/08/06/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/"/>
+    <published>2026-08-06T06:37:33.093Z</published>
+    <summary>
+      <![CDATA[<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line]]>
+    </summary>
+    <title>Untitled</title>
+    <updated>2026-08-06T06:39:05.574Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <category term="引导" scheme="https://reverser9n6h12.me/tags/%E5%BC%95%E5%AF%BC/"/>
+    <id>https://reverser9n6h12.me/2026/05/14/formula/</id>
+    <link href="https://reverser9n6h12.me/2026/05/14/formula/"/>
+    <published>2026-05-14T09:13:05.000Z</published>
+    <summary>
+      <![CDATA[<p>我们注意到即使是在群公告里发布了《提问的智慧》这篇文章，依然有很少人能够深刻领悟到问出一个值得回答的问题的精髓。这里我们给出一个公式，希望你可以先按照这个套路自行解决问题，如果解决不能，再按照要求前来提问。</p>
+<p>事先声明：本指南不提供此项目的实际支持服务！</p>
+<p>公式：<br>第一步：<br>观察你的报错信息。很多的报错信息都带了解决]]>
+    </summary>
+    <title>提问的智慧-公式版</title>
+    <updated>2026-05-14T09:14:04.858Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <category term="引导" scheme="https://reverser9n6h12.me/tags/%E5%BC%95%E5%AF%BC/"/>
+    <id>https://reverser9n6h12.me/2026/05/14/hello/</id>
+    <link href="https://reverser9n6h12.me/2026/05/14/hello/"/>
+    <published>2026-05-14T08:56:54.000Z</published>
+    <summary>
+      <![CDATA[<p>开始之前的碎碎念……<br>不得不承认的一点是：当下的计算机专业大环境确实正在变得愈发糟糕。在一定程度上，AI 或许首当其冲地恶化了大环境。过去的4年里，我们见证了开发模式的彻底重写，也见证了学习模式的大翻盘，更是见证了各行各业在 AI 飞速发展下的万般变化。甚至包括本博客也存在大量 AIGC 的内容。</p>
+<p>我们还发现：人们似乎越来越普遍地认]]>
+    </summary>
+    <title>
+      <![CDATA[转载<在第一步之前......>]]>
+    </title>
+    <updated>2026-05-14T09:13:59.899Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <category term="Confusion" scheme="https://reverser9n6h12.me/tags/Confusion/"/>
+    <id>https://reverser9n6h12.me/2026/05/11/VM/</id>
+    <link href="https://reverser9n6h12.me/2026/05/11/VM/"/>
+    <published>2026-05-11T10:04:10.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="指令虚拟化"><a href="#指令虚拟化" class="headerlink" title="指令虚拟化"></a>指令虚拟化</h1><h2 id="这篇文章解决什么问题"><a href="#这篇文章解决什么问题" class="headerlink" title="这篇文章解决什么问题"></a>这篇文章解决什么问题</h2><p]]>
+    </summary>
+    <title>VM</title>
+    <updated>2026-05-15T14:25:18.695Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <category term="Crypto" scheme="https://reverser9n6h12.me/tags/Crypto/"/>
+    <id>https://reverser9n6h12.me/2026/03/25/Block_Cipher/</id>
+    <link href="https://reverser9n6h12.me/2026/03/25/Block_Cipher/"/>
+    <published>2026-03-25T13:41:17.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="分组密码常见工作模式"><a href="#分组密码常见工作模式" class="headerlink" title="分组密码常见工作模式"></a>分组密码常见工作模式</h1><p>本文整理 CTF Reverse 中常见的分组密码基础知识，重点关注 ECB、CBC 这类工作模式，以及逆向时如何通过参数、常量和数据流进行识别。</p>]]>
+    </summary>
+    <title>Block Cipher</title>
+    <updated>2026-05-15T14:25:52.062Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <category term="Crypto" scheme="https://reverser9n6h12.me/tags/Crypto/"/>
+    <id>https://reverser9n6h12.me/2026/03/24/TEA/</id>
+    <link href="https://reverser9n6h12.me/2026/03/24/TEA/"/>
+    <published>2026-03-24T05:41:39.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="TEA-系列加密"><a href="#TEA-系列加密" class="headerlink" title="TEA 系列加密"></a>TEA 系列加密</h1><p>TEA（Tiny Encryption Algorithm）是一种实现简单、速度较快的分组加密算法。它每次处理 64 bit（8 byte）数据，使用 128 bit（16]]>
+    </summary>
+    <title>TEA</title>
+    <updated>2026-05-15T14:25:52.049Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <category term="Crypto" scheme="https://reverser9n6h12.me/tags/Crypto/"/>
+    <id>https://reverser9n6h12.me/2026/03/20/RC4/</id>
+    <link href="https://reverser9n6h12.me/2026/03/20/RC4/"/>
+    <published>2026-03-20T09:22:12.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="概念"><a href="#概念" class="headerlink" title="概念:"></a>概念:</h2><p>在密码学中，RC4(Rivest Cipher 4)是一种流加密算法，密钥长度可变，它加解密使用相同的密钥，因此也属于对称加密算法，RC4是有线等效加密(WEP)中采用的加密算法，也曾经是TLS可采用的算法之一。<b]]>
+    </summary>
+    <title>RC4</title>
+    <updated>2026-03-21T10:03:08.615Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <category term="learn" scheme="https://reverser9n6h12.me/tags/learn/"/>
+    <id>https://reverser9n6h12.me/2026/03/18/ask%20questions/</id>
+    <link href="https://reverser9n6h12.me/2026/03/18/ask%20questions/"/>
+    <published>2026-03-18T04:11:35.000Z</published>
+    <summary>
+      <![CDATA[<p>声明<br>许多项目在他们网站的帮助文档中链接了本指南。这很好，这正是我们想要的用途。但如果你是该项目管理员并试图创建指向本指南的超链接，请在超链接附近的显著位置注明：</p>
+<p>本指南不提供此项目的实际支持服务！</p>
+<p>我们已经深刻领教到缺少上述声明所带来的痛苦：我们将不停地被那些认为发布这本指南就意味着有责任解决世上所有技术问题的傻瓜苦]]>
+    </summary>
+    <title>提问的智慧</title>
+    <updated>2026-03-18T04:18:38.128Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <category term="Resource" scheme="https://reverser9n6h12.me/tags/Resource/"/>
+    <category term="Reverse" scheme="https://reverser9n6h12.me/tags/Reverse/"/>
+    <id>https://reverser9n6h12.me/2026/03/15/%E5%85%A5%E9%97%A8%E8%B5%84%E6%BA%90/</id>
+    <link href="https://reverser9n6h12.me/2026/03/15/%E5%85%A5%E9%97%A8%E8%B5%84%E6%BA%90/"/>
+    <published>2026-03-15T12:32:48.000Z</published>
+    <summary>
+      <![CDATA[<p>这篇文章用于整理我学习 CTF Reverse 时用到的入门资源。它不是一次性完成的清单，而是一个会持续更新的索引。</p>
+<h2 id="靶场与练习"><a href="#靶场与练习" class="headerlink" title="靶场与练习"></a>靶场与练习</h2><ul>
+<li>蚁景 CTF-RE 实战链接：<a href="ht]]>
+    </summary>
+    <title>RE-switch from impossible to possible</title>
+    <updated>2026-05-15T14:23:00.498Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>9n6h12</name>
+    </author>
+    <category term="Confusion" scheme="https://reverser9n6h12.me/tags/Confusion/"/>
+    <id>https://reverser9n6h12.me/2026/03/15/SMC/</id>
+    <link href="https://reverser9n6h12.me/2026/03/15/SMC/"/>
+    <published>2026-03-14T18:10:18.000Z</published>
+    <summary>
+      <![CDATA[<p>自修改代码（Self-Modifying Code，SMC）指程序在运行过程中修改即将执行的代码。常见做法是把关键逻辑以加密形式保存在可执行文件或资源区中，运行时再动态解密、执行，执行后也可能再次加密，借此增加静态分析难度。</p>
+<p>从逆向视角看，SMC 的核心特征通常包括：</p>
+<ul>
+<li>程序会修改代码段权限，例如调用 <code>]]>
+    </summary>
+    <title>SMC自修改代码</title>
+    <updated>2026-05-15T14:25:52.040Z</updated>
+  </entry>
+</feed>
