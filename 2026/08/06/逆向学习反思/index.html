@@ -1,170 +1,78 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>逆向学习反思 | OVERTHINKER</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="/img/icon/HitsugayaToshiro.ico"><link rel="stylesheet" href="/css/index.css?v=20260617"><link rel="canonical" href="https://reverser9n6h12.me/2026/08/06/%E9%80%86%E5%90%91%E5%AD%A6%E4%B9%A0%E5%8F%8D%E6%80%9D/"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><!-- Feature-specific CSS--><!-- aplayer--><!-- swiper--><!-- fancybox ui--><!-- katex--><!-- Open Graph--><meta name="description" content="经历：初衷：不知不觉,浑浑噩噩地在大学里待了一年，收获反正是很多的，尤其是加入了学校信安工作室，接触到了逆向这一方向 选择学习逆向的初衷并不是因为它难，入门门槛高，才给人这样的感觉，要么就是：”你学的东西难，你在显摆，你在装”；要么就是：“学这么难的东西，长时间没啥产出，你能学好是吗，别再假装卖力了，无人在意”，以下是我的经历，准确的来说，是我的一些经历，从而使我对逆向稍微”感兴趣“ 儿时其实不是">
-<meta property="og:type" content="article">
-<meta property="og:title" content="逆向学习反思">
-<meta property="og:url" content="https://reverser9n6h12.me/2026/08/06/%E9%80%86%E5%90%91%E5%AD%A6%E4%B9%A0%E5%8F%8D%E6%80%9D/">
-<meta property="og:site_name" content="OVERTHINKER">
-<meta property="og:description" content="经历：初衷：不知不觉,浑浑噩噩地在大学里待了一年，收获反正是很多的，尤其是加入了学校信安工作室，接触到了逆向这一方向 选择学习逆向的初衷并不是因为它难，入门门槛高，才给人这样的感觉，要么就是：”你学的东西难，你在显摆，你在装”；要么就是：“学这么难的东西，长时间没啥产出，你能学好是吗，别再假装卖力了，无人在意”，以下是我的经历，准确的来说，是我的一些经历，从而使我对逆向稍微”感兴趣“ 儿时其实不是">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://reverser9n6h12.me/img/background/download2.jpg">
-<meta property="article:published_time" content="2026-08-06T06:40:06.000Z">
-<meta property="article:modified_time" content="2026-08-07T02:17:02.111Z">
-<meta property="article:author" content="9n6h12">
-<meta property="article:tag" content="文章">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://reverser9n6h12.me/img/background/download2.jpg"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="OVERTHINKER"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="/img/icon/HitsugayaToshiro.ico"><link rel="apple-touch-icon" href="/img/icon/HitsugayaToshiro.ico" sizes="180x180"><script>console.log(' %c Solitude %c ' + '3.0.21' + ' %c https://github.com/everfu/hexo-theme-solitude',
-    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
-    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
-    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
-</script><script>let mdate = "7-7,9-18,12-13";
-mdate = (mdate.split(","));
-let ndate = new Date();
-for (let i of mdate) {
-    if (i === (ndate.getMonth()+1) + "-" + (ndate.getDate())) {
-        document.documentElement.classList.add('memorial');
-    }
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>逆向学习反思 | OVERTHINKER</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
 }
-</script><style>body,#web-main{background:url("/img/background/bj.jpg") center/cover fixed !important;}#aside-content .card-widget{background:rgba(0,0,0,.3) !important;backdrop-filter:blur(10px) !important;}#post-helper{background:none !important;}.post-bg{filter:brightness(.7);}#page-header.post-bg::before{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%) !important;opacity:.8 !important;}</style><script>(()=>{
-        const saveToLocal = {
-            set: function setWithExpiry(key, value, ttl) {
-                if (ttl === 0)
-                    return
-                const now = new Date()
-                const expiryDay = ttl * 86400000
-                const item = {
-                    value: value,
-                    expiry: now.getTime() + expiryDay
-                }
-                localStorage.setItem(key, JSON.stringify(item))
-            },
-            get: function getWithExpiry(key) {
-                const itemStr = localStorage.getItem(key)
-
-                if (!itemStr) {
-                    return undefined
-                }
-                const item = JSON.parse(itemStr)
-                const now = new Date()
-
-                if (now.getTime() > item.expiry) {
-                    localStorage.removeItem(key)
-                    return undefined
-                }
-                return item.value
-            }
-        };
-        window.utils = {
-            saveToLocal: saveToLocal,
-            getCSS: (url, id = false) => new Promise((resolve, reject) => {
-              const link = document.createElement('link')
-              link.rel = 'stylesheet'
-              link.href = url
-              if (id) link.id = id
-              link.onerror = reject
-              link.onload = link.onreadystatechange = function() {
-                const loadState = this.readyState
-                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-                link.onload = link.onreadystatechange = null
-                resolve()
-              }
-              document.head.appendChild(link)
-            }),
-            getScript: (url, attr = {}) => new Promise((resolve, reject) => {
-              const script = document.createElement('script')
-              script.src = url
-              script.async = true
-              script.onerror = reject
-              script.onload = script.onreadystatechange = function() {
-                const loadState = this.readyState
-                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-                script.onload = script.onreadystatechange = null
-                resolve()
-              }
-
-              Object.keys(attr).forEach(key => {
-                script.setAttribute(key, attr[key])
-              })
-
-              document.head.appendChild(script)
-            }),
-            addGlobalFn: (key, fn, name = false, parent = window) => {
-                const globalFn = parent.globalFn || {}
-                const keyObj = globalFn[key] || {}
-
-                if (name && keyObj[name]) return
-
-                name = name || Object.keys(keyObj).length
-                keyObj[name] = fn
-                globalFn[key] = keyObj
-                parent.globalFn = globalFn
-            },
-            addEventListenerPjax: (ele, event, fn, option = false) => {
-              ele.addEventListener(event, fn, option)
-              utils.addGlobalFn('pjax', () => {
-                  ele.removeEventListener(event, fn, option)
-              })
-            },
-            diffDateFormat: (selector) => {
-                selector.forEach(item => {
-                    const date = new Date(item.getAttribute('datetime') || item.textContent);
-                    item.textContent = (date.getMonth() + 1).toString()+'/'+date.getDate().toString();
-                });
-            },
-        }
-    })()</script><!-- theme--><script>initTheme = () => {
-    const cachedMode = utils.saveToLocal.get('theme');
-    if (cachedMode === undefined)
-        document.documentElement.setAttribute('data-theme', 'dark');
-    else
-        document.documentElement.setAttribute('data-theme', cachedMode);
-    typeof rm === 'object' && rm.mode(cachedMode === undefined || cachedMode === 'dark')
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
 }
-initTheme()</script><script>const GLOBAL_CONFIG = {
-    root: '/',
-    algolia: undefined,
-    localsearch: {"preload":false,"path":"/search.xml"},
-    runtime: '2026-03-15 00:00:00',
-    lazyload: {
-        enable: false,
-        error: '/img/error_load.avif'
-    },
-    copyright: false,
-    highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
-    randomlink: false,
-    lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可","search":{"empty":"找不到你查询的内容：${query}","hit":"找到 ${hits} 条结果，用时 ${time} 毫秒","placeholder":"输入关键词快速查找","count":"共 <b>${count}</b> 条结果。","loading":"搜索中..."}},
-    aside: {
-        state: {
-            morning: "早上好，开始逆向",
-            noon: "该吃午饭了",
-            afternoon: "下午好，继续积累",
-            night: "早点休息",
-            goodnight: "晚安",
-        },
-        witty_words: ["你可以的","长期主义会给出答案","少一点焦虑，多一点复盘"],
-        witty_comment: {
-            prefix: '好久不见，',
-            back: '欢迎再次回来，',
-        },
-    },
-    covercolor: {
-        enable: false
-    },
-    comment: false,
-    lightbox: 'null',
-    right_menu: false,
-    translate: {"translateDelay":0,"defaultEncoding":2},
-    lure: false,
-    expire: false,
-};</script><script id="config-diff">var PAGE_CONFIG = {
-    is_post: true,
-    is_page: false,
-    is_home: false,
-    page: 'banner',
-    toc: true,
-    comment: false,
-    ai_text: false,
-    color: false,
-}</script><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="OVERTHINKER" type="application/atom+xml">
-</head><body id="body" data-type="banner"><div><div id="console"><div class="close-btn" onclick="sco.hideConsole()"><i class="solitude fas fa-xmark"></i></div><div class="console-card-group"><div class="console-card-group-right"><div class="console-card tags" onclick="sco.hideConsole()"><div class="card-content"><div class="author-content-item-tips">标签</div><div class="author-content-item-title">寻找感兴趣的领域</div></div><div class="card-tag-cloud"><a href="/tags/Crypto/">Crypto<sup>3</sup></a><a href="/tags/Confusion/">Confusion<sup>2</sup></a><a href="/tags/%E5%BC%95%E5%AF%BC/">引导<sup>2</sup></a><a href="/tags/Resource/">Resource<sup>1</sup></a><a href="/tags/Reverse/">Reverse<sup>1</sup></a><a href="/tags/learn/">learn<sup>1</sup></a><a href="/tags/%E6%96%87%E7%AB%A0/">文章<sup>1</sup></a></div></div><div class="console-card history" onclick="sco.hideConsole()"><ul class="card-archive-list"><li class="item"><a href="/archives/2026/08/"><span class="date">2026/08</span><div class="count-group"><span class="count">1</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2026/05/"><span class="date">2026/05</span><div class="count-group"><span class="count">3</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2026/03/"><span class="date">2026/03</span><div class="count-group"><span class="count">6</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/"><span class="date">全部文章</span><div class="count-group"><span class="count">10</span><span class="unit">篇</span></div></a></li></ul></div></div></div><div class="button-group"><div class="console-btn-item"><span class="darkmode_switchbutton" onclick="sco.switchDarkMode()" title="昼夜切换"><i class="solitude fas fa-circle-half-stroke"></i></span></div><div class="console-btn-item" id="consoleHideAside"><span class="asideSwitch" onclick="sco.switchHideAside()" title="边栏显示控制"><i class="solitude fas fa-arrows-left-right-to-line"></i></span></div></div><div class="console-mask" onclick="sco.hideConsole()"></div></div></div><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude fas fa-circle-half-stroke"></i><span>显示模式</span></span></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">靶场</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://www.nssctf.cn/index" title="NSSCTF"><img class="nolazyload back-menu-item-icon" src="/img/icon/it418-hxst0-001.ico" alt="NSSCTF"><span class="back-menu-item-text">NSSCTF</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://ctf.show" title="CTFshow"><img class="nolazyload back-menu-item-icon" src="/img/icon/o95e7-m4dm9-001.ico" alt="CTFshow"><span class="back-menu-item-text">CTFshow</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://gz.imxbt.cn/" title="ReviewCTF"><img class="nolazyload back-menu-item-icon" src="/img/icon/f4ofb-o72i1-001.ico" alt="ReviewCTF"><span class="back-menu-item-text">ReviewCTF</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://ctf.xidian.edu.cn/" title="西电终端"><img class="nolazyload back-menu-item-icon" src="/img/icon/cflp7-lobq4-001.ico" alt="西电终端"><span class="back-menu-item-text">西电终端</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://hello-ctf.com/" title="HelloCTF"><img class="nolazyload back-menu-item-icon" src="/img/icon/a0cc7-iv1mo-001.ico" alt="HelloCTF"><span class="back-menu-item-text">HelloCTF</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://buuoj.cn/challenges" title="BuuCtf"><img class="nolazyload back-menu-item-icon" src="/img/icon/g3jao-lb1ir-001.ico" alt="BuuCtf"><span class="back-menu-item-text">BuuCtf</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文章</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  fas fa-folder-closed"></i><span>归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  fas fa-clone"></i><span>分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  fas fa-tags"></i><span>标签</span></a></li><li><a class="site-page child" href="javascript:travelling()"><i class="solitude  fas fa-gift"></i><span>宝藏博主</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>我的</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="solitude  fas fa-user"></i><span>关于</span></a></li><li><a class="site-page child" href="/music/"><i class="solitude  fas fa-music"></i><span>音乐馆</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="card-tag-cloud"><a href="/tags/Crypto/">Crypto<sup>3</sup></a><a href="/tags/Confusion/">Confusion<sup>2</sup></a><a href="/tags/%E5%BC%95%E5%AF%BC/">引导<sup>2</sup></a><a href="/tags/Resource/">Resource<sup>1</sup></a><a href="/tags/Reverse/">Reverse<sup>1</sup></a><a href="/tags/learn/">learn<sup>1</sup></a><a href="/tags/%E6%96%87%E7%AB%A0/">文章<sup>1</sup></a></div></div></div></div><div><div class="needEndHide" id="rightside"><div class="rs_hide"><button class="translate" type="button" title="简繁转换">简</button><button class="mode" type="button" title="显示模式切换" onclick="sco.switchDarkMode()"><i class="fas fa-circle-half-stroke"></i></button></div><div class="rs_show"><button class="config" type="button" title="扩展" onclick="document.querySelector(&quot;.rs_hide&quot;).classList.toggle(&quot;show&quot;)"><i class="fas fa-gear fa-spin"></i></button><button class="mobile toc" type="button" title="目录" onclick="document.querySelector('#card-toc').classList.toggle('open')"><i class="fas fa-list"></i></button><button class="top" type="button" title="返回顶部" onclick="sco.toTop()"><i class="fas fa-arrow-up"></i><span id="percent">0</span></button></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><div class="back-home-button" tabindex="-1"><i class="solitude fas fa-bars-progress"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">靶场</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://www.nssctf.cn/index" title="NSSCTF"><img class="nolazyload back-menu-item-icon" src="/img/icon/it418-hxst0-001.ico" alt="NSSCTF"><span class="back-menu-item-text">NSSCTF</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://ctf.show" title="CTFshow"><img class="nolazyload back-menu-item-icon" src="/img/icon/o95e7-m4dm9-001.ico" alt="CTFshow"><span class="back-menu-item-text">CTFshow</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://gz.imxbt.cn/" title="ReviewCTF"><img class="nolazyload back-menu-item-icon" src="/img/icon/f4ofb-o72i1-001.ico" alt="ReviewCTF"><span class="back-menu-item-text">ReviewCTF</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://ctf.xidian.edu.cn/" title="西电终端"><img class="nolazyload back-menu-item-icon" src="/img/icon/cflp7-lobq4-001.ico" alt="西电终端"><span class="back-menu-item-text">西电终端</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://hello-ctf.com/" title="HelloCTF"><img class="nolazyload back-menu-item-icon" src="/img/icon/a0cc7-iv1mo-001.ico" alt="HelloCTF"><span class="back-menu-item-text">HelloCTF</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://buuoj.cn/challenges" title="BuuCtf"><img class="nolazyload back-menu-item-icon" src="/img/icon/g3jao-lb1ir-001.ico" alt="BuuCtf"><span class="back-menu-item-text">BuuCtf</span></a></div></div></div></div><a href="/" title="返回博客主页" id="site-name"><span class="title">Overthinker</span><i class="solitude fas fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">逆向学习反思</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文章</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  fas fa-folder-closed"></i><span>归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  fas fa-clone"></i><span>分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  fas fa-tags"></i><span>标签</span></a></li><li><a class="site-page child" href="javascript:travelling()"><i class="solitude  fas fa-gift"></i><span>宝藏博主</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>我的</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="solitude  fas fa-user"></i><span>关于</span></a></li><li><a class="site-page child" href="/music/"><i class="solitude  fas fa-music"></i><span>音乐馆</span></a></li></ul></div></div></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索"><i class="solitude fas fa-magnifying-glass"></i></a></div><div class="nav-button" id="nav-console"><a class="console_switchbutton" onclick="sco.showConsole()" title="中控台" href="javascript:void(0);"><label><i class="left"></i><i class="center"></i><i class="right"></i></label></a></div><div class="nav-button" id="nav-totop" onclick="sco.toTop()"><a class="totopbtn"><i class="solitude fas fa-arrow-up"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fas fa-bars"></i></a></div></div></div></nav><div class="coverdiv" id="coverdiv"><img class="nolazyload" id="post-cover" src="/img/background/download2.jpg" alt="逆向学习反思"></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="该文章为原创文章，注意版权协议">原创</a><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%96%87%E7%AB%A0/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>文章</span></a></div></div></div></div><h1 class="post-title">逆向学习反思</h1><div id="post-meta"><div class="meta-secondline"><span class="post-meta-date" title="发布于 2026-08-06 14:40:06"><i class="post-meta-icon solitude fas fa-calendar-days"></i><time datetime="2026-08-06T06:40:06.000Z">2026-08-06T06:40:06.000Z</time></span><span class="post-meta-date" title="最后更新于 2026-08-07 10:17:02"><i class="post-meta-icon solitude fas fa-arrows-rotate"></i><time datetime="2026-08-07T02:17:02.111Z">2026-08-07T02:17:02.111Z</time></span><span class="post-meta-position" title="作者IP归属地为China"><i class="post-meta-icon solitude fas fa-location-dot"></i><span>China</span></span></div></div></div><div class="post-radius-bottom"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content article-container"><h1 id="经历："><a href="#经历：" class="headerlink" title="经历："></a>经历：</h1><h2 id="初衷："><a href="#初衷：" class="headerlink" title="初衷："></a>初衷：</h2><p>不知不觉,浑浑噩噩地在大学里待了一年，收获反正是很多的，尤其是加入了学校信安工作室，接触到了逆向这一方向</p>
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><meta name="page-config" content="{&quot;code_fold&quot;:null}"><script class="pjax-js">var config = {"root":"/","code_fold":15,"search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}};
+var page_config = {
+  code_fold: null
+};
+function updatePageConfig() {
+  var newPageConfig = document.querySelector('meta[name="page-config"]');
+  if (newPageConfig) {
+    page_config = JSON.parse(newPageConfig.content);
+  }
+}
+document.addEventListener('pjax:complete', function() { updatePageConfig(); });
+updatePageConfig();</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.woff2") format('woff2');
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><style>:root {
+ --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+ --light-background: url('/img/bk.jpg');
+ --theme-encrypt-confirm: 'confirm'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.vercount','meta[name=page-config]'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+const postBg = document.querySelector('#post-bg');
+if (postBg) lightGallery(postBg, {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.vercount','meta[name=page-config]'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="OVERTHINKER" type="application/atom+xml">
+</head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">首页</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">归档</span></a></li><li class="navItem"><a class="navBlock" href="/about/"><span class="navItemTitle">关于</span></a></li><li class="navItem"><a class="navBlock" href="/categories/"><span class="navItemTitle">分类</span></a></li><li class="navItem"><a class="navBlock" href="/tags/"><span class="navItemTitle">标签</span></a></li><li class="navItem"><a class="navBlock" href="/link/"><span class="navItemTitle">友链</span></a></li><li class="navItem"><a class="navBlock" href="/music/"><span class="navItemTitle">音乐</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>逆向学习反思</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2026-08-06T06:40:06.000Z" id="date"> 2026-08-06</time></div></span><br><span>Last Update: <div class="control"><time datetime="2026-08-08T05:27:21.651Z" id="updated"> 2026-08-08</time></div></span></div></div><hr><div id="post-content"><h1 id="经历："><a href="#经历：" class="headerlink" title="经历："></a>经历：</h1><h2 id="初衷："><a href="#初衷：" class="headerlink" title="初衷："></a>初衷：</h2><p>不知不觉,浑浑噩噩地在大学里待了一年，收获反正是很多的，尤其是加入了学校信安工作室，接触到了逆向这一方向</p>
 <p>选择学习逆向的初衷并不是因为它难，入门门槛高，才给人这样的感觉，要么就是：”你学的东西难，你在显摆，你在装”；要么就是：“学这么难的东西，长时间没啥产出，你能学好是吗，别再假装卖力了，无人在意”，以下是我的经历，准确的来说，是我的一些经历，从而使我对逆向稍微”感兴趣“</p>
 <h2 id="儿时"><a href="#儿时" class="headerlink" title="儿时"></a>儿时</h2><p>其实不是这样的，我呢，小学的时候因为家里过的并不是很富裕，没有手机，总想玩手机，但是没办法，太贵了，那个时候家里做生意，父母殷勤劳作，也不敢让他们了解到我对手机游戏的热衷与向往，因而偷偷去网吧玩电脑打游戏，那时村里的网吧便宜，一个小时就一块钱。<br> 但该来的总会来，网吧的老板娘(我喊她姑姥姥)呢正好是我妈妈发小，不用说，她们经常来往，正好有一次我在那玩4399洛克王国的时候，心心念念的皇家圣光迪莫到手了，惊呼了一下，当时并不知道我妈去找老板娘玩，给我逮到了……</p>
 <p>自那以后我妈也是担心我偷偷去网吧玩电脑而给我买了一台台式电脑，在那时配置算可以的了，能玩cf，虐杀原形，逆战，4399，7k7k，红警，甚是怀念，然而那时候的网络是通过宽带电话机接过来的，然后再用网线接电话机(具体咋操作的也不清楚了)得到的,没有wifi无线网，就只是单一有线宽带网。直到有一天宽带因欠费而不能上网(那时候小，还啥都不懂)，我就让我妈给宽带维修人员打电话，人家说就是宽带手机号欠费了，后面每当宽带不能用的时候我就提醒我妈交话费。但过了两年，我们被告知宽带欠费了，我就还以为是宽带绑定的那个手机号欠费了，就提醒我妈交话费，然并卵，并不是因为手机号欠费了，而是宽带业务欠费了，这我才直到每年需要交500块的业务费，只是第一年的是送的。果不其然，为了省钱，我们选择了不交(那时家里过的是真急)，至此结束了我两年台式电脑的生活</p>
@@ -174,7 +82,7 @@ initTheme()</script><script>const GLOBAL_CONFIG = {
 <h3 id="五："><a href="#五：" class="headerlink" title="五："></a>五：</h3><p>这个时候红米note2和乐视那款手机发行的也有一段时期了，随着游戏资源包的扩增，画质提升，所需配置的提升，利用开核工具已经满足不了流畅运行王者荣耀和刺激战场的需求了，又烫又卡，这时开始接触搞机(别乱想哈，上网上搜一下就知道是啥了)，也接触到了很多论坛如移动叔叔，酷安，小米社区(那个时候管的不严)，开启了”既不让手机发烫也能流畅运行游戏的方法”之旅，也贪玩下载了一些wifi攻击软件(当时不知道是wifi攻击的app)，我一看用root就能直接用这个工具让别人的wifi不能用而且还能给别人访问的网页里面的图片给换成自己给他们替换的，那个时候恶搞堂弟，给我玩的笑死了快，也正是在他喊”我靠，我快手里的封面图片咋全部变成如花了“，我随即笑得快喘不过气了，事情的真相也暴露了</p>
 <h2 id="六-九年级："><a href="#六-九年级：" class="headerlink" title="六-九年级："></a>六-九年级：</h2><h3 id="六年级"><a href="#六年级" class="headerlink" title="六年级:"></a>六年级:</h3><p>这个时期的我已经不只是玩lua脚本了，因为腾讯，网易的游戏开始加强了安全防御，专门检测有没有什么软件修改游戏数据，检测到了要么就是闪退，要么就是封号(但是后面直接用gg修改器隐藏过23就可以过这个检测了)，但还没开始检测root这个东西，因为那个时候厂商并不是特别抵制root，因为出事率比较低，那时候的黑客或者黑产大部分攻击电脑，对手机直接攻击的手段很少，但当时因为误下载一些需要root或者无障碍才能“正常运行”外挂，工具从而导致锁机和格机例子又确实渐增，包括我就中过很多次，那时候小，经不起诱惑(刷q币,改王者荣耀的点券各种容易中招的软件)，也不知道到底是不是真的，可能是虚荣心横溢了，哈哈。我中过root锁机(游戏外挂)，也中过无障碍锁机(自动抢红包)，甚至最严重的时候在初二的时候红米k20pro因为想玩奔跑吧少年的一个外挂中过一次格机(data数据以及IME，基带全掉了，那个时候仍然经不起诱惑捏哈哈，最后还是找酷安上的大佬花100快解决了)，被锁机的时候，幸好手里有第二台手机，就开始在问qq群里的大佬红米note2被锁机了咋办，人家就询问是root锁还是非root锁（那时候的大佬都挺好的，有问必答），就得知非root锁一般就是直接用电脑上的一些手机管家工具直接给开屏了，要么就是利用手机刚重启这段时间，锁机应用还没被系统启动(一般来说非root锁机手段会给你的这个软件加上自启动，但是系统刚重启需要一些初始化的时间，这个时间可以考虑利用手速把它删掉，但是一般都是用电脑的管家工具强行解开手机，更恶心的就直接音量键+开机键双清了)，而root锁更复杂点，双清有时候都解决不了，而是直接清data，因为双清一般只把应用给删了，对应的文件夹还存留在了手机里，root锁直接就是利用这点给你入侵了，好在当时小米的root防护机制并不怎么强，一般都是刷第三方rec(twrp)然后面具root，之后就可以对系统为所欲为了，因此果断进twrp找到对应的文件夹给删了，要么就是直接格式化data，反正了解的东西倒不少，但所有的东西都只是教程+工具，内部的代码以及底层原理是不太通的</p>
 <h3 id="七-九年级"><a href="#七-九年级" class="headerlink" title="七-九年级"></a>七-九年级</h3><p>那时候疫情，真是给我玩得爽翻了，后面锁机对我也没啥干扰了，就下载市面上各种公益外挂，当时玩得最多的就是香肠派对，各种天线，范围，自瞄，上色，透视，物品修改的挂全都玩过，但是只追求爽感，没有追求是怎么实现的热情，只知道自己懂点root，会点刷机，刷面具，懂一点修手机的能力，那个时候玩的都不是底层，但无妨我在朋友面前对手机的理解力之高，也正是这样，我的学习成绩一直拉低，后面县一高也是浑浑噩噩考上的，当时就玩手机从初一玩到初三，搞机，刷机，玩调度，刷内核，慢慢地变成了一个”刷机佬”(其实就是一个不懂原理的小白)</p>
-<h1 id="高中以及现在"><a href="#高中以及现在" class="headerlink" title="高中以及现在"></a>高中以及现在</h1><p>回头看，早期很多折腾更多是在跟着现成工具和教程走，既不理解底层原理，也有一些不够成熟的尝试。这些经历不是我现在想炫耀的技术，而是让我逐渐意识到：会用工具不等于懂原理，也让我后来更愿意把兴趣放在 CTF 和授权环境中的安全学习上。</p>
+<h1 id="高中以及现在"><a href="#高中以及现在" class="headerlink" title="高中以及现在"></a>高中以及现在</h1><p>回头看，早期很多折腾更多是在跟着现成工具和教程走，既不理解底层原理，也有一些不够成熟的尝试。这些经历不是我现在想炫耀的三脚猫的技术，而是让我逐渐意识到：会用工具不等于懂原理，也让我后来更愿意把兴趣放在 CTF 和授权环境中的安全学习上。</p>
 <p>这个时期因为学习压力的上升，加上学习对手机查管的制度特别严厉，就不怎么玩手机了，就高一的时候在咸鱼讨了个红米k40一直玩到第一次高考之后才换的红米k70pro，中间再多的就是一个高一从200多分，经历拷打慢慢上升到接近500分的成绩的故事，但是中途碰到疫情，又是狂玩，导致高一高二的基础打的不行，高三因为如此，又开始恶补基础，我现在逆向的学习瓶颈感觉就是这样，但是c语言就学了两周，汇编更是就学了一周，底层知识不行，现在碰到稍微算不上难题的题，不能依靠加密算法的特征，以及各种混淆的特征来做了，觉得it’s time to come back了，但由于内心不平衡又不想补，想继续做题，一直处于这样的循环，一直在瓶颈期里差不多有四个月了快，也就是说我现在的逆向能力与水平只比之前四五月份的能力强了么一丢，因为nssctf上的前十三页的逆向题刷的风雨无阻，此前是一道题都要磕半天，加上那时候的ai分析能力并没有五月之后的强，感觉这段时间除了利用ai的能力(花钱能力)的上升，其他都在止步，现在意识到了这点，而且有考虑到大二暑假想找实习，想尽快解决这方面的困境，人说二进制想出新手期最起码也得一年，但我觉得正是听信了这点才导致现在的原地踏步，尽管现在已经靠ai拿了一点国奖和省奖，但这只是结果，以后的工作需要的是过程+结果</p>
 <h1 id="目前已知的方法论："><a href="#目前已知的方法论：" class="headerlink" title="目前已知的方法论："></a>目前已知的方法论：</h1><p>在意识到错误之前的做题的思维模式是这样的：</p>
 <blockquote>
@@ -190,73 +98,4 @@ initTheme()</script><script>const GLOBAL_CONFIG = {
 <p>我靠的是<strong>模式匹配</strong>（”这个特征像TEA”），而不是<strong>逻辑理解</strong>（”这段代码在做什么事”）。</p>
 <p>所以一旦出题人魔改了本来就特别难的算法、又加了大量混淆、换了结构，我的模式匹配就失效了，就”无从下手”。</p>
 <p>我意识到了这点问题，但并不知道具体怎么解决，也有可能意识到解决这个问题需要耗费大量时间，潜意识里已经开始抵制了</p>
-<h1 id="未完-正在借鉴大佬方法论ing"><a href="#未完-正在借鉴大佬方法论ing" class="headerlink" title="未完(正在借鉴大佬方法论ing)"></a>未完(正在借鉴大佬方法论ing)</h1></article><div class="post-copyright"><div class="post-copyright__author_group"><div class="post-copyright__author_img"><img class="post-copyright__author_img_front" src="/img/logo.png"></div><div class="post-copyright__author_name">9n6h12</div><div class="post-copyright__author_desc"></div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" onclick="RemoveRewardMask()"></div></div></div><div class="social-share"><a class="social-share-ico icon-qq" target="_blank" rel="noopener" href="https://connect.qq.com/widget/shareqq/index.html?url=https%3A%2F%2Freverser9n6h12.me%2F2026%2F08%2F06%2F%25E9%2580%2586%25E5%2590%2591%25E5%25AD%25A6%25E4%25B9%25A0%25E5%258F%258D%25E6%2580%259D%2F&amp;title=%E9%80%86%E5%90%91%E5%AD%A6%E4%B9%A0%E5%8F%8D%E6%80%9D&amp;desc=undefined&amp;summary=undefined&amp;site=%E9%80%86%E5%90%91%E5%AD%A6%E4%B9%A0%E5%8F%8D%E6%80%9D&amp;pics=%2Fimg%2Fbackground%2Fdownload2.jpg" title="分享到QQ"><i class="solitude fab fa-qq"></i></a><a class="social-share-ico icon-weibo" target="_blank" rel="noopener" href="http://service.weibo.com/share/share.php?url=https%3A%2F%2Freverser9n6h12.me%2F2026%2F08%2F06%2F%25E9%2580%2586%25E5%2590%2591%25E5%25AD%25A6%25E4%25B9%25A0%25E5%258F%258D%25E6%2580%259D%2F&amp;title=%E9%80%86%E5%90%91%E5%AD%A6%E4%B9%A0%E5%8F%8D%E6%80%9D&amp;pic=%2Fimg%2Fbackground%2Fdownload2.jpg" title="分享到微博"><i class="solitude fab fa-weibo"></i></a></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>协议，完整转载请注明来自<a href="/">OVERTHINKER</a></span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%96%87%E7%AB%A0/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>文章<span class="tagsPageCount">1</span></span></a></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2026/05/14/formula/"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">提问的智慧-公式版</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="top-group"><div class="sayhi" id="sayhi" onclick="sco.changeWittyWord()"></div></div></div><div class="avatar"><img alt="头像" src="/img/icon/ToshiroHitsugaya.jpg"></div><div class="description">记录逆向、调试与安全学习</div><div class="bottom-group"><span class="left"><div class="name">9n6h12</div><div class="desc">CTF Reverse 学习记录</div></span><div class="social-icons is-center"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="solitude fas fa-bars"></i><span>文章目录</span></div><div class="toc-content" id="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%8F%E5%8E%86%EF%BC%9A"><span class="toc-text">经历：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E8%A1%B7%EF%BC%9A"><span class="toc-text">初衷：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%84%BF%E6%97%B6"><span class="toc-text">儿时</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-%E4%BA%94%E5%B9%B4%E7%BA%A7%EF%BC%9A"><span class="toc-text">四-五年级：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%EF%BC%9A"><span class="toc-text">四：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%EF%BC%9A"><span class="toc-text">五：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD-%E4%B9%9D%E5%B9%B4%E7%BA%A7%EF%BC%9A"><span class="toc-text">六-九年级：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AD%E5%B9%B4%E7%BA%A7"><span class="toc-text">六年级:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%83-%E4%B9%9D%E5%B9%B4%E7%BA%A7"><span class="toc-text">七-九年级</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%AB%98%E4%B8%AD%E4%BB%A5%E5%8F%8A%E7%8E%B0%E5%9C%A8"><span class="toc-text">高中以及现在</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%AE%E5%89%8D%E5%B7%B2%E7%9F%A5%E7%9A%84%E6%96%B9%E6%B3%95%E8%AE%BA%EF%BC%9A"><span class="toc-text">目前已知的方法论：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E5%9C%A8%E5%93%AA%EF%BC%9F"><span class="toc-text">问题在哪？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%AA%E5%AE%8C-%E6%AD%A3%E5%9C%A8%E5%80%9F%E9%89%B4%E5%A4%A7%E4%BD%AC%E6%96%B9%E6%B3%95%E8%AE%BAing"><span class="toc-text">未完(正在借鉴大佬方法论ing)</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude fas fa-map"></i><span>最近发布</span></div><div class="aside-list"><a class="aside-list-item" href="/2026/08/06/%E9%80%86%E5%90%91%E5%AD%A6%E4%B9%A0%E5%8F%8D%E6%80%9D/" title="逆向学习反思"><div class="thumbnail"><img alt="逆向学习反思" src="/img/background/download2.jpg"></div><div class="content"><span class="title" href="/2026/08/06/%E9%80%86%E5%90%91%E5%AD%A6%E4%B9%A0%E5%8F%8D%E6%80%9D/" title="逆向学习反思">逆向学习反思</span></div></a><a class="aside-list-item" href="/2026/05/14/formula/" title="提问的智慧-公式版"><div class="thumbnail"><img alt="提问的智慧-公式版" src="/img/background/635caa93e40a9a42137b2892a89c168b.jpg"></div><div class="content"><span class="title" href="/2026/05/14/formula/" title="提问的智慧-公式版">提问的智慧-公式版</span></div></a><a class="aside-list-item" href="/2026/05/14/hello/" title="转载&lt;在第一步之前......&gt;"><div class="thumbnail"><img alt="转载&lt;在第一步之前......&gt;" src="/img/background/635caa93e40a9a42137b2892a89c168b.jpg"></div><div class="content"><span class="title" href="/2026/05/14/hello/" title="转载&lt;在第一步之前......&gt;">转载&lt;在第一步之前......&gt;</span></div></a><a class="aside-list-item" href="/2026/05/11/VM/" title="VM"><div class="thumbnail"><img alt="VM" src="/img/background/sdfnh1.jpg"></div><div class="content"><span class="title" href="/2026/05/11/VM/" title="VM">VM</span></div></a><a class="aside-list-item" href="/2026/03/25/Block_Cipher/" title="Block Cipher"><div class="thumbnail"><img alt="Block Cipher" src="/img/background/download5.jpg"></div><div class="content"><span class="title" href="/2026/03/25/Block_Cipher/" title="Block Cipher">Block Cipher</span></div></a></div></div></div></div></main><footer id="footer"><div id="footer_deal"><div><div class="nolazyload footer_mini_logo" id="footer_mini_logo" title="返回顶部" onclick="sco.toTop()"><img src alt="返回顶部"></div></div></div><div id="st-footer"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2026 By<a class="footer-bar-link" href="/" title="9n6h12">9n6h12</a></div><div class="beian-group"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://hexo.io/" title="框架：Hexo">框架：Hexo</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude" title="主题：Solitude">主题：Solitude</a></div></div><div class="footer-bar-right"></div></div></div><div class="comment-barrage needEndHide"></div></footer></div><div><!-- Critical scripts loaded synchronously--><script src="/js/utils.js?v=20260617"></script><script src="/js/main.js?v=20260617"></script><!-- Non-critical scripts loaded asynchronously--><script async src="/js/third_party/waterfall.min.js?v=20260617"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><!-- Feature-specific scripts loaded asynchronously--><script defer src="/js/tw_cn.js?v=20260617"></script><!-- UI enhancement scripts--><script defer src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><!-- Music player scripts--><!-- Cover color processing scripts--><script>window.paceOptions = {
-  restartOnPushState: false
-}
-
-utils.addGlobalFn('pjaxSend', () => {
-  Pace.restart()
-}, 'pace_restart')
-</script><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- Search functionality--><!-- Right menu functionality--><div class="js-pjax"></div></div><!-- pjax--><script>let pjax = null;
-
-function initPjax() {
-    if (typeof Pjax === 'undefined') {
-        console.warn('Pjax is not loaded yet, retrying...');
-        setTimeout(initPjax, 100);
-        return;
-    }
-
-    pjax = new Pjax({
-        elements: 'a:not([target="_blank"])',
-        selectors: ["title","#body-wrap","#site-config","meta[name=\"description\"]",".js-pjax","meta[property^=\"og:\"]","#config-diff",".rs_show",".rs_hide"],
-        cacheBust: false,
-        analytics: false,
-        scrollRestoration: false
-    })
-
-    // 将 pjax 实例挂载到全局
-    window.pjax = pjax;
-
-    document.querySelectorAll('script[data-pjax]').forEach(item => {
-        const newScript = document.createElement('script')
-        const content = item.text || item.textContent || item.innerHTML || ""
-        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
-        newScript.appendChild(document.createTextNode(content))
-        item.parentNode.replaceChild(newScript, item)
-    })
-
-    document.addEventListener('pjax:complete', () => {
-        window.refreshFn()
-
-        document.querySelectorAll('script[data-pjax]').forEach(item => {
-            const newScript = document.createElement('script')
-            const content = item.text || item.textContent || item.innerHTML || ""
-            Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
-            newScript.appendChild(document.createTextNode(content))
-            item.parentNode.replaceChild(newScript, item)
-        })
-
-        GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
-
-    })
-
-    document.addEventListener('pjax:error', (e) => {
-        if (e.request.status === 404) {
-            pjax.loadUrl('/404.html')
-        }
-    })
-}
-
-// 初始化 Pjax
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initPjax);
-} else {
-    initPjax();
-}</script><!-- google adsense--><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="solitude fas fa-xmark"></i></button></nav><div class="search-wrap"><div class="search-box"><input class="search-box-input" id="search-input" type="text" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="输入关键词快速查找"></div><div id="search-results"><div id="search-hits"></div></div><div id="search-pagination"></div><div id="search-tips"></div></div></div><div id="search-mask"></div></div><script src="/js/search/local.js?v=20260617"></script></body></html>
-        <script>
-            const posts = ["2026/08/06/逆向学习反思/","2026/05/14/formula/","2026/05/14/hello/","2026/05/11/VM/","2026/03/25/Block_Cipher/","2026/03/24/TEA/","2026/03/20/RC4/","2026/03/18/ask questions/","2026/03/15/入门资源/","2026/03/15/SMC/"];
-            function toRandomPost() {
-                const randomPost = posts[Math.floor(Math.random() * posts.length)];
-                pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
-            }
-        </script>
+<h1 id="未完-正在借鉴大佬方法论ing"><a href="#未完-正在借鉴大佬方法论ing" class="headerlink" title="未完(正在借鉴大佬方法论ing)"></a>未完(正在借鉴大佬方法论ing)</h1><div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-end"><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2026/05/14/formula/">提问的智慧-公式版 Prev →</a></div></div></div><details id="reward"><summary>reward</summary><div><span>支付宝</span><br><img src="/img/icon/zhifubao.jpg"></div><div><span>微信</span><br><img src="/img/icon/weixin.jpg"></div></details></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="To Catalog">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a><a onclick="BgmControl()"><svg id="bgm-control" viewBox="0 0 30 34" fill="#18d1ff" style="width: 24px; transition: transform .3s;margin-top: 4px"><path d="M25.998 23.422V11.29h3.999v12.132h-3.999zM19.497 6.234h4.001v22.243h-4.001V6.234zM12.998.867h4v32.978h-4V.867zm-6.5 5.367h4.001v22.243H6.498V6.234zm-6.5 5.056h4v12.132h-4V11.29z"></path></svg><audio id="bgm" src="/audio/bgm.mp3" autoplay loop crossorigin="anonymous"> </audio></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo" style="margin:0;border-radius:0;"></a><h1 id="Dr"><a href="/">9n6h12</a></h1><div id="description"><p>CTF Reverse、安卓逆向、调试、混淆分析与安全学习笔记</p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%8F%E5%8E%86%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">经历：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E8%A1%B7%EF%BC%9A"><span class="toc-number">1.1.</span> <span class="toc-text">初衷：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%84%BF%E6%97%B6"><span class="toc-number">1.2.</span> <span class="toc-text">儿时</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-%E4%BA%94%E5%B9%B4%E7%BA%A7%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">四-五年级：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%EF%BC%9A"><span class="toc-number">1.3.1.</span> <span class="toc-text">四：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%EF%BC%9A"><span class="toc-number">1.3.2.</span> <span class="toc-text">五：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD-%E4%B9%9D%E5%B9%B4%E7%BA%A7%EF%BC%9A"><span class="toc-number">1.4.</span> <span class="toc-text">六-九年级：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AD%E5%B9%B4%E7%BA%A7"><span class="toc-number">1.4.1.</span> <span class="toc-text">六年级:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%83-%E4%B9%9D%E5%B9%B4%E7%BA%A7"><span class="toc-number">1.4.2.</span> <span class="toc-text">七-九年级</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%AB%98%E4%B8%AD%E4%BB%A5%E5%8F%8A%E7%8E%B0%E5%9C%A8"><span class="toc-number">2.</span> <span class="toc-text">高中以及现在</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%AE%E5%89%8D%E5%B7%B2%E7%9F%A5%E7%9A%84%E6%96%B9%E6%B3%95%E8%AE%BA%EF%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">目前已知的方法论：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E5%9C%A8%E5%93%AA%EF%BC%9F"><span class="toc-number">3.1.</span> <span class="toc-text">问题在哪？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%AA%E5%AE%8C-%E6%AD%A3%E5%9C%A8%E5%80%9F%E9%89%B4%E5%A4%A7%E4%BD%AC%E6%96%B9%E6%B3%95%E8%AE%BAing"><span class="toc-number">4.</span> <span class="toc-text">未完(正在借鉴大佬方法论ing)</span></a></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
